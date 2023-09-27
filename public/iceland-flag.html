@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        background-color: #02529c;
+        height: 180px;
+        width: 250px;
+        position: relative;
+      }
+      .white {
+        background-color: white;
+      }
+      .white#vertical {
+        height: 100%;
+        width: 40px;
+        position: absolute;
+        left: 70px;
+      }
+      .white#horizontal {
+        height: 40px;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+      }
+
+      .red {
+        background-color: #dc1e35;
+      }
+
+      .red#vertical {
+        height: 100%;
+        width: 20px;
+        position: absolute;
+        left: 10px;
+        z-index: 1;
+      }
+      .red#horizontal {
+        height: 20px;
+        width: 100%;
+        position: absolute;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="white" id="vertical">
+        <div class="red" id="vertical"></div>
+      </div>
+      <div class="white" id="horizontal">
+        <div class="red" id="horizontal"></div>
+      </div>
+    </div>
+  </body>
+</html>
